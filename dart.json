@@ -45,5 +45,21 @@
 			
 		]
 	},
+	"focus": {
+		"prefix": "nextfocus",
+		"body": "FocusScope.of(context).nextFocus();"
+	  },
+	  "oneditcomplete": {
+		"prefix": "oneditcomplete",
+		"body": "onEditingComplete:()=>FocusScope.of(context).nextFocus(),"
+	  },
+	  "provider": {
+		"prefix": "offalse",
+		"body": "Provider.of<${1:AppState}>(context, listen: false).$2"
+	  },
+	  "routename": {
+		"prefix": "routename",
+		"body": "static const routeName = \"$1\";"
+	  }
 
 }
