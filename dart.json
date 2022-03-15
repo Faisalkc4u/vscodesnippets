@@ -60,6 +60,18 @@
 	  "routename": {
 		"prefix": "routename",
 		"body": "static const routeName = \"$1\";"
+	  },
+	  "smartrefresh": {
+		"prefix": "smartrefresh",
+		"body": "final RefreshController _refreshController = RefreshController(initialRefresh: false);"
+	  },
+	  "clipBehavior": {
+		"prefix": "clipBehavior",
+		"body": "clipBehavior: Clip.antiAlias,"
+	  },
+	  "snackbar": {
+		"prefix": "snackbar",
+		"body": "ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(\"$1\")));"
 	  }
 
 }
