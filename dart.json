@@ -38,12 +38,33 @@
 			
 		]
 	},
+	"pop":{
+		"prefix": "pop",
+		"body": [
+			" Navigator.of(context).pop()"
+			
+		]
+	},
+	"borderRadius":{
+		"prefix": "borderRadius",
+		"body": [
+			"borderRadius: BorderRadius.circular(${1})"
+			
+		]
+	},
+	"boxdecoration":{
+		"prefix": "boxdecoration",
+		"body": [
+			"decoration: BoxDecoration(${1}),"
+			
+		]
+	},
 	"routeName":{
 		"prefix": "routename",
 		"body": [
 			"static const routeName = '${1}_screen';"
 			
 		]
-	},
+	}
 
 }
