@@ -65,6 +65,34 @@
 			"static const routeName = '${1}_screen';"
 			
 		]
-	}
+	},
+	"focus": {
+		"prefix": "nextfocus",
+		"body": "FocusScope.of(context).nextFocus();"
+	  },
+	  "oneditcomplete": {
+		"prefix": "oneditcomplete",
+		"body": "onEditingComplete:()=>FocusScope.of(context).nextFocus(),"
+	  },
+	  "provider": {
+		"prefix": "offalse",
+		"body": "Provider.of<${1:AppState}>(context, listen: false).$2"
+	  },
+	  "routename": {
+		"prefix": "routename",
+		"body": "static const routeName = \"$1\";"
+	  },
+	  "smartrefresh": {
+		"prefix": "smartrefresh",
+		"body": "final RefreshController _refreshController = RefreshController(initialRefresh: false);"
+	  },
+	  "clipBehavior": {
+		"prefix": "clipBehavior",
+		"body": "clipBehavior: Clip.antiAlias,"
+	  },
+	  "snackbar": {
+		"prefix": "snackbar",
+		"body": "ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(\"$1\")));"
+	  }
 
 }
